@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.wrapper, .portafolio, .contact-section{
+  width: 100vw;
+  height: 110vh;
+  /* background-color: blue; */
+  background: linear-gradient(90deg, #be9abe 0%, #b8e3e4 100%);
+  color: black;
+}
+  
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    
+}
+
+.menu a {
+color: black;
+text-decoration: none;
+padding: 10px 20px;
+
+
+}
+.menu li{
+    list-style: none;
+}
+
+.menu .active{
+    color: aqua; /* para HOME */
+
+
+}
+.brand span{
+  color: aqua; /* para la V */
+}
+
+.navbar{
+  display: flex; /* para que los elementos se pongan al lado */
+  justify-content: space-between; /* los elementos se ponen separados y uno en medio */
+  padding: 2em;
+}
+
+/* box-shadow: 10px 10px 17px #F4F1F1;
+
+
+ */
+
+ .menu a:hover{
+     background-color: aqua;
+     color: black;
+     transition: ease-in .6;
+ }
+
+ .brand{
+     margin-top: -7px;
+     color: black;
+ }
+ .brand h2{
+     color: rgb(239, 243, 247); /* Para la G */
+ }
+
+ .main{
+     margin: 0 auto;
+     width: 80 vw;
+     height: 80vh;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     align-items: center; /* Centra descripción */
+
+ }
+
+ h1{
+     font-size: 3em;
+     color: white;
+
+ }
+ p{
+    font-family: Arial, Helvetica, Sans-serif;
+  color: black;
+  
+  font-size: 20px;
+     
+ }
+ .listados{
+     align-self: center;
+     align-content: space-between;
+     text-align-last: left;
+     font-size: 17px;
+ }
+
+ span{
+     color: aqua;
+ }
+
+ .download-cv{
+     padding: 10px 20px;
+     background-color: aqua;
+     border: none;
+     border-radius: 20px;
+     margin-top: 10px;
+     cursor: pointer; /* manita */
+     box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+
+ }
+
+ .download-cv:hover{
+     background-color: white;
+     box-shadow: none;
+ }
+
+ .main img{
+     border: 5px solid aqua;
+     height: 450px;
+     
+
+
+ }
+
+ .info-content h2{
+     color: white;
+     font-size: 2em;
+     
+ }
+
+ .about{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     width: 100vw;
+     align-items: center;
+ }
+
+ .about-info h2{
+    color: black;
+    font-size: 2em;
+ }
+
+ .about img{
+     width:250px;
+     border: 7px solid aqua;
+     
+ }
+ .about-info{
+     grid-column: 5/10;
+     padding: 2em;
+
+
+ }
+
+ .divider{
+     height: 4px;
+     width: 60px;
+     background-color: aqua;
+     margin-top: 10px;
+     margin-bottom: 2em;
+ }
+
+ .about p{
+     margin-bottom: 1em;
+     
+ }
+
+ .portafolio-headings{
+     width: 100vw;
+     justify-content: center;
+     padding: 5em;
+     
+ }
+.portafolio-headings h2{
+    font-size: 2em;
+}
+.portafolio .container{
+    width: 80vm;
+    height: 80vm;
+    margin: 0 auto;
+    display: flex;
+    
+    justify-content: center;
+}
+
+.card {
+    width: 380px;
+    background-color: rgba(255, 255, 255, 0.815);
+    /* background-image: url(../img/img-opacity50.png); */
+    margin: 1em;
+
+
+}
+
+.card_details{
+    display: flex;
+    justify-content: space-evenly; /* para la misma distancia entre elementos */
+
+}
+
+.card_details a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.card_details i{
+    font-size: 2em;
+
+}
+
+.card_img{
+    width: 100%;
+    height: 400px;
+    background-color: cadetblue;
+    background-size: cover;
+    background-image: url(../img/laptop.jpg);
+}
+
+.card_title{
+    justify-content: center;
+}
+
+.contact-headings h2{
+    font-size: 2em;
+    color: white;
+
+}
+.contact-section{
+    padding: 3em;
+    margin: 0 auto;
+    
+}
+.container-contact{
+    width: 750px;
+    height: 700px;
+    bottom: 0px; /* pertenece siempre al final */
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.form input{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+
+}
+
+.form textarea{
+    height: 150px;
+    background: none;
+    color: white;
+    padding: 1.5em;
+    border: 1px solid white;
+
+}
+.btn-submit{
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: turquoise;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: black;
+}
+
+.btn-submit: hover{
+    back
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 0%;
+    background-color: aqua ;
+
+
+}
+
+.footer-content h5, .social-network i{
+    font-size: 1em;
+    align-items: center;
+}
+
+.sotial-network{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    margin-top: 1em;
+
+}
+
+.habilidades{
+    color: thistle;
+}
